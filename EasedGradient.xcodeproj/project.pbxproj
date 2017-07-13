@@ -26,6 +26,7 @@
 		041DFCFC1F17F47500FB048E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041DFCFA1F17F47500FB048E /* LaunchScreen.storyboard */; };
 		041DFD011F17F7D100FB048E /* EasedGradient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D97C1BEFF229002C0205 /* EasedGradient.framework */; };
 		041DFD031F17F7DC00FB048E /* EasedGradient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D97C1BEFF229002C0205 /* EasedGradient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		041DFD081F17F9F600FB048E /* photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 041DFD071F17F9F600FB048E /* photo.jpg */; };
 		52D6D9871BEFF229002C0205 /* EasedGradient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D97C1BEFF229002C0205 /* EasedGradient.framework */; };
 		8933C7851EB5B820000D00A4 /* EasedGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* EasedGradient.swift */; };
 		8933C7861EB5B820000D00A4 /* EasedGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* EasedGradient.swift */; };
@@ -96,6 +97,7 @@
 		041DFCF81F17F47500FB048E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		041DFCFB1F17F47500FB048E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		041DFCFD1F17F47500FB048E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		041DFD071F17F9F600FB048E /* photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo.jpg; sourceTree = "<group>"; };
 		52D6D97C1BEFF229002C0205 /* EasedGradient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasedGradient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6D9861BEFF229002C0205 /* EasedGradient-iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EasedGradient-iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6D9E21BEFFF6E002C0205 /* EasedGradient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasedGradient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -190,6 +192,7 @@
 				041DFCF51F17F47500FB048E /* Main.storyboard */,
 				041DFCF81F17F47500FB048E /* Assets.xcassets */,
 				041DFCFA1F17F47500FB048E /* LaunchScreen.storyboard */,
+				041DFD071F17F9F600FB048E /* photo.jpg */,
 				041DFCFD1F17F47500FB048E /* Info.plist */,
 			);
 			path = "EasedGradient-Example";
@@ -522,6 +525,7 @@
 			files = (
 				041DFCFC1F17F47500FB048E /* LaunchScreen.storyboard in Resources */,
 				041DFCF91F17F47500FB048E /* Assets.xcassets in Resources */,
+				041DFD081F17F9F600FB048E /* photo.jpg in Resources */,
 				041DFCF71F17F47500FB048E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

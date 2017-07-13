@@ -16,7 +16,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let imageView = UIImageView(image: UIImage(named: "photo.jpg"))
+        imageView.contentMode = .scaleAspectFill
+        view.addSubview(imageView)
+
+        scrollView.backgroundColor = UIColor.clear
         scrollView.alwaysBounceVertical = true
+        scrollView.alwaysBounceHorizontal = true
         view.addSubview(scrollView)
 
         let gradientViews = makeGradientViews()
@@ -38,7 +44,7 @@ class ViewController: UIViewController {
         return curves.map { (curve, name) in
             let view = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.gradientViewHeight))
 
-            let gradient = UIColor.green.gradient(to: .orange, stops: 32, using: curve)
+            let gradient = UIColor.clear.gradient(to: .black, stops: 16, using: curve)
             let easedGradientLayer = CAGradientLayer()
             easedGradientLayer.colors = gradient.colors
             easedGradientLayer.locations = gradient.locations as [NSNumber]
@@ -48,6 +54,7 @@ class ViewController: UIViewController {
             easedGradientLayer.frame = view.bounds
 
             let label = UILabel(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 44))
+            label.textColor = .white
             label.textAlignment = .center
             label.text = name
             view.addSubview(label)
@@ -59,6 +66,7 @@ class ViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         scrollView.frame = view.bounds
+        scrollView.frame.origin.y += 20
     }
 }
 
