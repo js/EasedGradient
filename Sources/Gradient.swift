@@ -8,9 +8,8 @@
 
 import UIKit
 
-
-extension UIColor {
-    func mix(with other: UIColor, ratio: CGFloat) -> UIColor {
+public extension UIColor {
+    public func mix(with other: UIColor, ratio: CGFloat) -> UIColor {
         guard other != self else { return self }
 
         // TODO: convert to a common colorspace first?
@@ -31,17 +30,17 @@ extension UIColor {
         return self
     }
 
-    struct Gradient {
-        let colors: [CGColor]
-        let locations: [CGFloat]
+    public struct Gradient {
+        public let colors: [CGColor]
+        public let locations: [CGFloat]
         // TODO be a Generator?
     }
 
-    func gradient(to other: UIColor, stops: Int) -> Gradient {
+    public func gradient(to other: UIColor, stops: Int) -> Gradient {
         return gradient(to: other, stops: stops, using: .linear)
     }
 
-    func gradient(to other: UIColor, stops: Int, using curve: EasingCurve) -> Gradient {
+    public func gradient(to other: UIColor, stops: Int, using curve: EasingCurve) -> Gradient {
         guard stops > 2 else {
             return Gradient(colors: [self, other].map({ $0.cgColor }), locations: [0.0, 1.0])
         }

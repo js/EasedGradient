@@ -19,6 +19,13 @@
 		041DFCE81F17F26D00FB048E /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041DFCE61F17F26D00FB048E /* Gradient.swift */; };
 		041DFCE91F17F26D00FB048E /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041DFCE61F17F26D00FB048E /* Gradient.swift */; };
 		041DFCEA1F17F26D00FB048E /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041DFCE61F17F26D00FB048E /* Gradient.swift */; };
+		041DFCF21F17F47500FB048E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041DFCF11F17F47500FB048E /* AppDelegate.swift */; };
+		041DFCF41F17F47500FB048E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041DFCF31F17F47500FB048E /* ViewController.swift */; };
+		041DFCF71F17F47500FB048E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041DFCF51F17F47500FB048E /* Main.storyboard */; };
+		041DFCF91F17F47500FB048E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041DFCF81F17F47500FB048E /* Assets.xcassets */; };
+		041DFCFC1F17F47500FB048E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041DFCFA1F17F47500FB048E /* LaunchScreen.storyboard */; };
+		041DFD011F17F7D100FB048E /* EasedGradient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D97C1BEFF229002C0205 /* EasedGradient.framework */; };
+		041DFD031F17F7DC00FB048E /* EasedGradient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D97C1BEFF229002C0205 /* EasedGradient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		52D6D9871BEFF229002C0205 /* EasedGradient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D97C1BEFF229002C0205 /* EasedGradient.framework */; };
 		8933C7851EB5B820000D00A4 /* EasedGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* EasedGradient.swift */; };
 		8933C7861EB5B820000D00A4 /* EasedGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* EasedGradient.swift */; };
@@ -32,6 +39,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		041DFD041F17F7DC00FB048E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52D6D9731BEFF229002C0205 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52D6D97B1BEFF229002C0205;
+			remoteInfo = "EasedGradient-iOS";
+		};
 		52D6D9881BEFF229002C0205 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 52D6D9731BEFF229002C0205 /* Project object */;
@@ -55,12 +69,33 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		041DFD061F17F7DC00FB048E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				041DFD031F17F7DC00FB048E /* EasedGradient.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		041DFCD71F17F11D00FB048E /* Comparable+Clamp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Comparable+Clamp.swift"; sourceTree = "<group>"; };
 		041DFCDC1F17F18600FB048E /* EasingCurve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasingCurve.swift; sourceTree = "<group>"; };
 		041DFCE21F17F1C900FB048E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		041DFCE41F17F1DE00FB048E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		041DFCE61F17F26D00FB048E /* Gradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
+		041DFCEF1F17F47500FB048E /* EasedGradient-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EasedGradient-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		041DFCF11F17F47500FB048E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		041DFCF31F17F47500FB048E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		041DFCF61F17F47500FB048E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		041DFCF81F17F47500FB048E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		041DFCFB1F17F47500FB048E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		041DFCFD1F17F47500FB048E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52D6D97C1BEFF229002C0205 /* EasedGradient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasedGradient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6D9861BEFF229002C0205 /* EasedGradient-iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EasedGradient-iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6D9E21BEFFF6E002C0205 /* EasedGradient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasedGradient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +110,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		041DFCEC1F17F47500FB048E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041DFD011F17F7D100FB048E /* EasedGradient.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		52D6D9781BEFF229002C0205 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -139,12 +182,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		041DFCF01F17F47500FB048E /* EasedGradient-Example */ = {
+			isa = PBXGroup;
+			children = (
+				041DFCF11F17F47500FB048E /* AppDelegate.swift */,
+				041DFCF31F17F47500FB048E /* ViewController.swift */,
+				041DFCF51F17F47500FB048E /* Main.storyboard */,
+				041DFCF81F17F47500FB048E /* Assets.xcassets */,
+				041DFCFA1F17F47500FB048E /* LaunchScreen.storyboard */,
+				041DFCFD1F17F47500FB048E /* Info.plist */,
+			);
+			path = "EasedGradient-Example";
+			sourceTree = "<group>";
+		};
 		52D6D9721BEFF229002C0205 = {
 			isa = PBXGroup;
 			children = (
 				8933C7811EB5B7E0000D00A4 /* Sources */,
 				8933C7831EB5B7EB000D00A4 /* Tests */,
 				52D6D99C1BEFF38C002C0205 /* Configs */,
+				041DFCF01F17F47500FB048E /* EasedGradient-Example */,
 				52D6D97D1BEFF229002C0205 /* Products */,
 				041DFCE11F17F1C900FB048E /* Frameworks */,
 			);
@@ -160,6 +217,7 @@
 				52D6DA0F1BF000BD002C0205 /* EasedGradient.framework */,
 				DD75027A1C68FCFC006590AF /* EasedGradient-macOS Tests.xctest */,
 				DD75028D1C690C7A006590AF /* EasedGradient-tvOS Tests.xctest */,
+				041DFCEF1F17F47500FB048E /* EasedGradient-Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -243,6 +301,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		041DFCEE1F17F47500FB048E /* EasedGradient-Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 041DFCFE1F17F47500FB048E /* Build configuration list for PBXNativeTarget "EasedGradient-Example" */;
+			buildPhases = (
+				041DFCEB1F17F47500FB048E /* Sources */,
+				041DFCEC1F17F47500FB048E /* Frameworks */,
+				041DFCED1F17F47500FB048E /* Resources */,
+				041DFD061F17F7DC00FB048E /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				041DFD051F17F7DC00FB048E /* PBXTargetDependency */,
+			);
+			name = "EasedGradient-Example";
+			productName = "EasedGradient-Example";
+			productReference = 041DFCEF1F17F47500FB048E /* EasedGradient-Example.app */;
+			productType = "com.apple.product-type.application";
+		};
 		52D6D97B1BEFF229002C0205 /* EasedGradient-iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52D6D9901BEFF229002C0205 /* Build configuration list for PBXNativeTarget "EasedGradient-iOS" */;
@@ -375,10 +452,14 @@
 		52D6D9731BEFF229002C0205 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Johan Sørensen";
 				TargetAttributes = {
+					041DFCEE1F17F47500FB048E = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
 					52D6D97B1BEFF229002C0205 = {
 						CreatedOnToolsVersion = 7.1;
 						LastSwiftMigration = 0800;
@@ -415,6 +496,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 52D6D9721BEFF229002C0205;
 			productRefGroup = 52D6D97D1BEFF229002C0205 /* Products */;
@@ -428,11 +510,22 @@
 				52D6D9851BEFF229002C0205 /* EasedGradient-iOS Tests */,
 				DD7502791C68FCFC006590AF /* EasedGradient-macOS Tests */,
 				DD75028C1C690C7A006590AF /* EasedGradient-tvOS Tests */,
+				041DFCEE1F17F47500FB048E /* EasedGradient-Example */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		041DFCED1F17F47500FB048E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041DFCFC1F17F47500FB048E /* LaunchScreen.storyboard in Resources */,
+				041DFCF91F17F47500FB048E /* Assets.xcassets in Resources */,
+				041DFCF71F17F47500FB048E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		52D6D97A1BEFF229002C0205 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -485,6 +578,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		041DFCEB1F17F47500FB048E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041DFCF41F17F47500FB048E /* ViewController.swift in Sources */,
+				041DFCF21F17F47500FB048E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		52D6D9771BEFF229002C0205 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -556,6 +658,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		041DFD051F17F7DC00FB048E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52D6D97B1BEFF229002C0205 /* EasedGradient-iOS */;
+			targetProxy = 041DFD041F17F7DC00FB048E /* PBXContainerItemProxy */;
+		};
 		52D6D9891BEFF229002C0205 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 52D6D97B1BEFF229002C0205 /* EasedGradient-iOS */;
@@ -573,7 +680,62 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		041DFCF51F17F47500FB048E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				041DFCF61F17F47500FB048E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		041DFCFA1F17F47500FB048E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				041DFCFB1F17F47500FB048E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		041DFCFF1F17F47500FB048E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				INFOPLIST_FILE = "EasedGradient-Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.johansorensen.EasedGradient-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		041DFD001F17F47500FB048E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				INFOPLIST_FILE = "EasedGradient-Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.johansorensen.EasedGradient-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		52D6D98E1BEFF229002C0205 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -938,6 +1100,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		041DFCFE1F17F47500FB048E /* Build configuration list for PBXNativeTarget "EasedGradient-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				041DFCFF1F17F47500FB048E /* Debug */,
+				041DFD001F17F47500FB048E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		52D6D9761BEFF229002C0205 /* Build configuration list for PBXProject "EasedGradient" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
