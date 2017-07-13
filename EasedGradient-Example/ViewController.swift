@@ -44,7 +44,7 @@ class ViewController: UIViewController {
         return curves.map { (curve, name) in
             let view = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.gradientViewHeight))
 
-            let gradient = UIColor.clear.gradient(to: .black, stops: 16, using: curve)
+            let gradient = Gradient(from: .clear, to: .black, stops: 16, using: curve)
             let easedGradientLayer = CAGradientLayer()
             easedGradientLayer.colors = gradient.colors
             easedGradientLayer.locations = gradient.locations as [NSNumber]

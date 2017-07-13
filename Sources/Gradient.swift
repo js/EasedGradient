@@ -29,29 +29,27 @@ public extension UIColor {
 
         return self
     }
+}
 
-    public struct Gradient {
-        public let colors: [CGColor]
-        public let locations: [CGFloat]
-        // TODO be a Generator?
-    }
+public struct Gradient {
+    public let colors: [CGColor]
+    public let locations: [CGFloat]
 
-    public func gradient(to other: UIColor, stops: Int) -> Gradient {
-        return gradient(to: other, stops: stops, using: .linear)
-    }
-
-    public func gradient(to other: UIColor, stops: Int, using curve: EasingCurve) -> Gradient {
+    public init(from: UIColor, to other: UIColor, stops: Int, using curve: EasingCurve) {
         guard stops > 2 else {
-            return Gradient(colors: [self, other].map({ $0.cgColor }), locations: [0.0, 1.0])
+            self.colors = [from, other].map({ $0.cgColor })
+            self.locations = [0.0, 1.0]
+            return
         }
 
         let colorsAndStops: [(CGColor, CGFloat)] = (0..<stops).map { stop in
             let location = CGFloat(stop) / CGFloat(stops)
             let ratio = curve.value(for: location)
-            let mixedColor = self.mix(with: other, ratio: ratio)
+            let mixedColor = from.mix(with: other, ratio: ratio)
             return (mixedColor.cgColor, location)
         }
 
-        return Gradient(colors: colorsAndStops.map({ $0.0 }), locations: colorsAndStops.map({ $0.1 }))
+        self.colors = colorsAndStops.map({ $0.0 })
+        self.locations = colorsAndStops.map({ $0.1 })
     }
 }

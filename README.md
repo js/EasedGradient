@@ -11,7 +11,7 @@ An eased gradient is simply a gradient rendered using an easing curve, such as "
 ## Usage
 
 ```swift
-let gradient = UIColor.blue.gradient(to: .red, stops: 32, using: .easeInOut)
+let gradient = Gradient(from: .blue, to: .red, stops: 32, using: .easeInOut)
 
 let gradientLayer = CAGradientLayer()
 gradientLayer.colors = gradient.colors
