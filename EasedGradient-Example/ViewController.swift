@@ -11,7 +11,7 @@ import EasedGradient
 
 class ViewController: UIViewController {
     let scrollView = UIScrollView(frame: .zero)
-    let gradientViewHeight: CGFloat = 64
+    let gradientViewHeight: CGFloat = 80
 
     override func viewDidLoad() {
         super.viewDidLoad()
